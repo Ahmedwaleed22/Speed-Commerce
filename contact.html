@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Commerce</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-purple": "#3E1E84",
+              "light-purple": "#9C7DE1",
+              gray: "#384252",
+              "button-bg": "#7E55D8",
+              "button-hover-bg": "rgb(98 62 177)",
+            },
+            fontFamily: {
+              Inter: ['"Inter"', "sans-serif"],
+            },
+            backgroundImage: {
+              "section-background":
+                "#E3F7F8 url('./img/points-sections-background.png') no-repeat center / cover screen;",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="bg-white flex flex-col md:flex-row justify-between items-center px-4 py-4 md:px-20 md:py-2 shadow"
+    >
+      <a href="/"
+        ><img
+          class="h-10 md:h-14"
+          src="./img/logo.png"
+          alt="Speed Commerce Logo"
+      /></a>
+      <nav>
+        <ul class="flex flex-row gap-4 md:gap-12 mt-4 md:mt-0">
+          <li>
+            <a
+              class="text-base md:text-lg text-gray-900 hover:text-purple-600"
+              href="/showcase.html"
+              >Showcase</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-base md:text-lg text-gray-900 hover:text-purple-600"
+              href="/pricing.html"
+              >Pricing</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="bg-white p-10">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="w-1/2 space-y-6">
+            <h1 class="text-5xl font-[600] text-gray-800 font-Inter">Get in touch</h1>
+            <p class="text-gray-600 font-Inter text-[#475467]">Our friendly team would love to hear from you.</p>
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <div class="w-full">
+                  <label for="firstName" class="text-sm font-[500] text-[#344054] font-Inter">First name</label>
+                  <input type="text" id="firstName" placeholder="First name" class="border border-[#D0D5DD] rounded-md p-2 w-full mt-1 font-Inter font-normal"/>
+                </div>
+                <div class="w-full">
+                  <label for="lastName" class="text-sm font-[500] text-[#344054] font-Inter">Last name</label>
+                  <input type="text" id="lastName" placeholder="Last name" class="border border-[#D0D5DD] rounded-md p-2 w-full mt-1 font-Inter font-normal"/>
+                </div>
+              </div>
+              <div class="w-full">
+                <label for="email" class="text-sm font-[500] text-[#344054] font-Inter">Email</label>
+                <input type="email" id="email" placeholder="you@company.com" class="border border-[#D0D5DD] rounded-md p-2 w-full mt-1 font-Inter font-normal"/>
+              </div>
+              <div class="w-full">
+                <label for="tel" class="text-sm font-[500] text-[#344054] font-Inter">Phone Number</label>
+                <div class="flex gap-0">
+                  <div class="relative">
+                    <select class="border border-[#D0D5DD] rounded-l-md py-2 px-4 w-16 appearance-none border-r-0 font-Inter text-[#101828] font-normal">
+                      <option>US</option>
+                      <!-- Additional country codes here -->
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M5.95 6.95l2.83 2.83 2.83-2.83.88.88-3.71 3.71-3.71-3.71.88-.88z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <input id="tel" type="tel" placeholder="(555) 000-0000" class="border border-[#D0D5DD] rounded-r-md p-2 flex-grow border-l-0 font-Inter font-normal"/>
+                </div>
+              </div>
+              <div class="w-full">
+                <label for="messageField" class="text-sm font-[500] text-[#344054] font-Inter">Message</label>
+                <div class="relative">
+                  <textarea id="messageField" rows="4" placeholder="Leave us a message..." class="border border-[#D0D5DD] rounded-md p-2 w-full resize-none font-Inter font-normal" maxlength="1024"></textarea>
+                  <div class="absolute bottom-4 right-3 text-sm text-[#667085] font-Inter">
+                    <span id="charCount">0</span>/1024
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <input id="privacyPolicy" type="checkbox" class="rounded border-[#D0D5DD] text-indigo-600 focus:ring-indigo-500 accent-[#7F56D9]"/>
+              <label for="privacyPolicy" class="ml-2 text-sm text-gray-600 font-Inter text-[#475467]">You agree to our friendly privacy policy.</label>
+            </div>
+            <button class="mt-4 bg-[#7F56D9] text-white py-2 px-6 rounded-md hover:bg-button-hover-bg transition duration-300 font-Inter w-[100%] h-[48px]">Send message</button>
+          </div>
+          <div class="w-1/2 flex justify-center">
+            <img class="max-h-[578px]" src="./svg/contact-avatar.svg" alt="Avatar">
+          </div>
+        </div>
+      </div>
+    </div>    
+    <footer
+      class="bg-[#191D24] flex justify-between px-20 py-2 items-center drop-shadow-sm"
+    >
+      <img class="h-14" src="./img/logo.png" alt="Logo" />
+      <ul class="flex gap-x-12">
+        <li><a class="text-lg text-white" href="#showcase">Showcase</a></li>
+        <li><a class="text-lg text-white" href="price.html">Pricing</a></li>
+      </ul>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

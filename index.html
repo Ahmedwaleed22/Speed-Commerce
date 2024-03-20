@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Commerce</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-purple": "#3E1E84",
+              "light-purple": "#9C7DE1",
+              gray: "#384252",
+              "button-bg": "#7E55D8",
+              "button-hover-bg": "rgb(98 62 177)",
+            },
+            fontFamily: {
+              Inter: ['"Inter"', "sans-serif"],
+            },
+            backgroundImage: {
+              "section-background":
+                "#E3F7F8 url('./img/points-sections-background.png') no-repeat center / cover screen;",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="bg-white flex flex-col md:flex-row justify-between items-center px-4 py-4 md:px-20 md:py-2 shadow"
+    >
+      <a href="/"
+        ><img
+          class="h-10 md:h-14"
+          src="./img/logo.png"
+          alt="Speed Commerce Logo"
+      /></a>
+      <nav>
+        <ul class="flex flex-row gap-4 md:gap-12 mt-4 md:mt-0">
+          <li>
+            <a
+              class="text-base md:text-lg text-gray-900 hover:text-purple-600"
+              href="/showcase.html"
+              >Showcase</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-base md:text-lg text-gray-900 hover:text-purple-600"
+              href="/pricing.html"
+              >Pricing</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="flex p-8 lg:p-20 justify-between items-center">
+      <div class="flex flex-col">
+        <div class="w-full mb-4 md:w-8/12">
+          <h2 class="text-dark-purple text-4xl lg:text-6xl font-bold mb-4">
+            The future of<br /><span class="text-light-purple"
+              >Quick Commerce.</span
+            >
+          </h2>
+          <p class="text-gray text-md lg:text-xl font-Inter">
+            Powerful, self-serve product and growth analytics to help you
+            convert, engage, and retain more users. Trusted by over 4,000
+            startups.
+          </p>
+        </div>
+        <button
+          class="bg-button-bg hover:bg-button-hover-bg text-white rounded-[12px] w-5/12 md:w-3/12 p-4 text-base transition-all"
+        >
+          Contact us
+        </button>
+      </div>
+      <img
+        class="hidden md:w-4/12 md:block drop-shadow-[25px_39px_48px_0_#7E55D847]"
+        src="./svg/showcase.svg"
+        alt="Showcase Image"
+      />
+    </section>
+    <section class="px-2 lg:px-20 flex flex-col gap-12 mb-[200px]">
+      <div class="point-section wow animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] p-12 lg:px-28 lg:py-28 flex relative"
+        >
+          <div class="w-full lg:w-6/12">
+            <span
+              class="p-6 border-[#CEF1F2] border-8 rounded-full w-[52px] h-[52px] flex justify-center items-center text-bold text-[#3AC6CB] bg-[#E3F7F8] text-2xl mb-8"
+              >1</span
+            >
+            <h3 class="text-3xl lg:text-5xl font-bold mb-4">Be Practical.</h3>
+            <p class="text-md lg:text-xl">
+              It’s Ok when you have 50-100 ish SKUs per Menu Per Service
+              Provider, Some might argue with semi-automatic dispatch
+              systems/scripts, today you’re here to know why that is not the
+              reality of quick commerce.
+            </p>
+          </div>
+          <div class="absolute right-0 bottom-0 hidden lg:block">
+            <img src="./svg/be-practicle/avatar.svg" alt="Avatar" />
+          </div>
+        </div>
+      </div>
+      <div class="point-section wow animate__bounceInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] p-12 lg:px-28 lg:py-28 flex relative"
+        >
+          <div class="absolute left-0 bottom-0 hidden lg:block">
+            <img src="./svg/get-creative/avatar.svg" alt="Avatar" />
+          </div>
+          <div class="hidden lg:w-6/12 lg:block"></div>
+          <div class="w-full lg:w-6/12">
+            <span
+              class="p-6 border-[#DFD4F5] border-8 rounded-full w-[52px] h-[52px] flex justify-center items-center text-bold text-[#7E55D8] bg-[#EDE7FA] text-2xl mb-8"
+              >2</span
+            >
+            <h3 class="text-3xl lg:text-5xl font-bold mb-4">Get Creative.</h3>
+            <p class="text-md lg:text-xl mb-8">
+              Why have a single integration that is tightly coupled with your
+              ERP&POS per each service provider & maintain it?
+            </p>
+            <p class="text-md lg:text-xl">
+              While you can have a single integration to rule them all !!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="point-section wow animate__bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] p-12 lg:px-28 lg:py-28 flex relative"
+        >
+          <div class="w-full lg:w-6/12">
+            <span
+              class="p-6 border-[#F5E0D4] border-8 rounded-full w-[52px] h-[52px] flex justify-center items-center text-bold text-[#D88555] bg-[#FAEEE7] text-2xl mb-8"
+              >3</span
+            >
+            <h3 class="text-3xl lg:text-5xl font-bold mb-4">
+              No maintenance, no manual anything.
+            </h3>
+            <p class="text-md lg:text-xl">
+              Should you choose to go the on-prem route & opt-in for automatic
+              updates, you’ll instantly get hot updates while the system is
+              running in ram, without even restarting, for all your branches &
+              your central server alike.
+            </p>
+          </div>
+          <div class="absolute right-0 bottom-0 hidden lg:block">
+            <img src="./svg/no-maintainance/avatar.svg" alt="Avatar" />
+          </div>
+        </div>
+      </div>
+      <div class="point-section wow animate__bounceInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] p-12 lg:px-28 lg:py-28 flex relative"
+        >
+          <div class="absolute left-0 bottom-0 hidden lg:block">
+            <img src="./svg/always-up/avatar.svg" alt="Avatar" />
+          </div>
+          <div class="hidden lg:w-6/12 lg:block"></div>
+          <div class="w-full lg:w-6/12">
+            <span
+              class="p-6 border-[#F7BBBA] border-8 rounded-full w-[52px] h-[52px] flex justify-center items-center text-bold text-[#EB5252] bg-[#FAD4D4] text-2xl mb-8"
+              >4</span
+            >
+            <h3 class="text-3xl lg:text-5xl font-bold mb-4">Always up & running.</h3>
+            <p class="text-md lg:text-xl">
+              The only reason that might stop this system from operating is
+              connection issues, should you opt-in for Speed Sync Uptime
+              Guarantee Service, You’ll get notified by email the moment of your
+              branches loses it’s internet connectivity or just pick
+              SpeedSynCloud instead of On-Prem Solution!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center items-center flex-col mb-[200px] px-5">
+      <div class="mb-5">
+        <h3 class="font-bold text-5xl mb-3 text-center">
+          Integration as a Plugin
+        </h3>
+        <p class="text-xl text-center">
+          Wanna know how? Let’s discuss internals!
+        </p>
+      </div>
+      <div class="flex gap-3 lg:gap-14 w-[100%] justify-center h-[80px]">
+        <img src="./svg/integration/left-arrow.svg" alt="Left Arrow" />
+        <button
+          onclick="document.location = 'contact.html'"
+          class="bg-button-bg hover:bg-button-hover-bg text-white rounded-[12px] w-[100%] max-w-[200px] p-4 text-base h-[55px] self-end transition-all"
+        >
+          Contact us
+        </button>
+        <img src="./svg/integration/right-arrow.svg" alt="Right Arrow" />
+      </div>
+    </section>
+    <footer
+      class="bg-[#191D24] flex justify-between px-20 py-2 items-center drop-shadow-sm"
+    >
+      <img class="h-14" src="./img/logo.png" alt="Logo" />
+      <ul class="flex gap-x-12">
+        <li><a class="text-lg text-white" href="#showcase">Showcase</a></li>
+        <li><a class="text-lg text-white" href="price.html">Pricing</a></li>
+      </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      $(function(){
+        new WOW().init(); 
+      });
+    </script>
+  </body>
+</html>

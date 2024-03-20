@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Commerce</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-purple": "#3E1E84",
+              "light-purple": "#9C7DE1",
+              gray: "#384252",
+              "button-bg": "#7E55D8",
+              "button-hover-bg": "rgb(98 62 177)",
+            },
+            fontFamily: {
+              Inter: ['"Inter"', "sans-serif"],
+            },
+            backgroundImage: {
+              "section-background":
+                "#E3F7F8 url('./img/points-sections-background.png') no-repeat center / cover screen;",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header
+      class="bg-white flex flex-col md:flex-row justify-between items-center px-4 py-4 md:px-20 md:py-2 shadow mb-20"
+    >
+      <a href="/"
+        ><img
+          class="h-10 md:h-14"
+          src="./img/logo.png"
+          alt="Speed Commerce Logo"
+      /></a>
+      <nav>
+        <ul class="flex flex-row gap-4 md:gap-12 mt-4 md:mt-0">
+          <li>
+            <a
+              class="text-base md:text-lg text-gray-900 hover:text-purple-600"
+              href="/showcase.html"
+              >Showcase</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-base md:text-lg text-gray-900 hover:text-purple-600"
+              href="/pricing.html"
+              >Pricing</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="px-3 lg:px-20 flex flex-col gap-12 mb-20">
+      <div class="point-section wow animate__bounceInLeft" data-wow-duration="1s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] px-12 lg:px-28 py-14 flex flex-col min-[1370px]:flex-row relative gap-5"
+        >
+          <div class="w-full min-[1370px]:w-6/12 flex flex-col justify-center">
+            <h3 class="text-4xl font-bold mb-4">Developed with</h3>
+            <h3 class="text-6xl font-bold">Core Tech Stack.</h3>
+          </div>
+          <div class="w-full min-[1370px]:w-6/12 grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] min-[1370px]:grid-cols-2 gap-8 justify-center max-[562px]:grid-cols-none">
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/rust.svg" alt="Rust" />
+                <span>Rusty Core</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/cpp.svg" alt="CPP" />
+                <span>CPP</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/polars.svg" alt="Polars.rs" />
+                <span>Polars.rs</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/c.svg" alt="C Programming" />
+                <span>C Programming</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/tokio.svg" alt="Tokio.rs" />
+                <span>Tokio.rs</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/ntex.svg" alt="Ntex" />
+                <span>Ntex</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/tonic.svg" alt="Tonic.rs" />
+                <span>Tonic.rs</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img class="w-[50px]" src="./svg/developed-with/prost.svg" alt="Prost.rs" />
+                <span>Prost.rs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="point-section wow animate__bounceInRight" data-wow-duration="1s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] px-12 lg:px-28 py-14 flex flex-col min-[1370px]:flex-row relative gap-5"
+        >
+          <div class="w-full min-[1370px]:w-6/12 flex flex-col justify-center">
+            <h3 class="text-4xl font-bold mb-4">Developed with</h3>
+            <h3 class="text-6xl font-bold">Cloud Tech Stack.</h3>
+          </div>
+          <div class="w-full min-[1370px]:w-6/12 grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] min-[1370px]:grid-cols-none gap-8 justify-center max-[562px]:grid-cols-none">
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/cloud-stack/golang.svg" alt="Golang" />
+                <span>Golang</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/cloud-stack/echo.svg" alt="Echo" />
+                <span>Echo</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/cloud-stack/opensource.svg" alt="Open Source" />
+                <span>Open Source</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="point-section wow animate__bounceInLeft" data-wow-duration="1s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] px-12 lg:px-28 py-14 flex flex-col min-[1370px]:flex-row relative gap-5"
+        >
+          <div class="w-full min-[1370px]:w-6/12 flex flex-col justify-center">
+            <h3 class="text-4xl font-bold mb-4">Cross-platform on-prem</h3>
+            <h3 class="text-6xl font-bold">UI Tech Stack.</h3>
+          </div>
+          <div class="w-full min-[1370px]:w-6/12 grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] min-[1370px]:grid-cols-2 gap-8 justify-center max-[562px]:grid-cols-none">
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/ui-tech-stack/flutter.svg" alt="Flutter" />
+                <span>Flutter</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/developed-with/cpp.svg" alt="CPP" />
+                <span>CPP</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/ui-tech-stack/dart.svg" alt="dart" />
+                <span>Dart</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/developed-with/c.svg" alt="C Programming" />
+                <span>C Programming</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/ui-tech-stack/kotlin.svg" alt="Kotlin" />
+                <span>Kotlin</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/ui-tech-stack/java.svg" alt="Java" />
+                <span>Java</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/ui-tech-stack/swift.svg" alt="Swift" />
+                <span>Swift</span>
+              </div>
+            </div>
+            <div
+              class="rounded-[.7em] sub-section relative max-w-[233px] w-[100%]"
+            >
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl min-w-[max-content]"
+              >
+                <img src="./svg/ui-tech-stack/python.svg" alt="Python" />
+                <span>Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="point-section wow animate__bounceInRight" data-wow-duration="1s">
+        <div
+          class="section-content z-10 bg-white mx-auto h-[100%] rounded-[1.6em] px-12 lg:px-28 py-14 flex flex-col relative gap-5"
+        >
+          <h3 class="text-5xl font-bold mb-16 text-center">
+            Always up & running.
+          </h3>
+          <div class="grid grid-cols-[repeat(auto-fit,_minmax(269px,_1fr))] gap-8">
+            <div class="rounded-[.7em] sub-section relative w-[100%]">
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl"
+              >
+                <img
+                  src="./svg/unique-features/static-ip.svg"
+                  alt="SS Online Public Static IP Server"
+                />
+                <span>SS Online Public Static IP Server</span>
+              </div>
+            </div>
+            <div class="rounded-[.7em] sub-section relative w-[100%]">
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl"
+              >
+                <img
+                  src="./svg/unique-features/ss-adapters.svg"
+                  alt="SS Adapters & Plugin System"
+                />
+                <span>SS Adapters & Plugin System</span>
+              </div>
+            </div>
+            <div class="rounded-[.7em] sub-section relative w-[100%]">
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl"
+              >
+                <img
+                  src="./svg/unique-features/exp-alogrithm.svg"
+                  alt="Exponential Retrial Algorithm."
+                />
+                <span>Exponential Retrial Algorithm.</span>
+              </div>
+            </div>
+            <div class="rounded-[.7em] sub-section relative w-[100%]">
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl"
+              >
+                <img
+                  src="./svg/unique-features/binary.svg"
+                  alt="Online Binary Patch Updater"
+                />
+                <span>Online Binary Patch Updater</span>
+              </div>
+            </div>
+            <div class="rounded-[.7em] sub-section relative w-[100%]">
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl"
+              >
+                <img
+                  src="./svg/unique-features/on-perm-cloud.svg"
+                  alt="On-Prem, Cloud"
+                />
+                <span>On-Prem, Cloud</span>
+              </div>
+            </div>
+            <div class="rounded-[.7em] sub-section relative w-[100%]">
+              <div
+                class="section-content z-10 bg-white h-[100%] rounded-[.7em] px-4 py-5 flex relative gap-5 items-center text-xl"
+              >
+                <img
+                  src="./svg/unique-features/encryption.svg"
+                  alt="Encryption Everywhere"
+                />
+                <span>Encryption Everywhere</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex px-20 align">
+      <div class="w-6/12 flex flex-col justify-center items-center">
+        <div class="w-8/12 wow animate__bounceInLeft" data-wow-duration="1s">
+          <h3 class="text-5xl font-semibold mb-4">Offers Sync</h3>
+          <p class="text-2xl text-[#384252]">
+            Wanna know how? Let’s discuss internals!
+          </p>
+          <div class="flex gap-14 w-[100%] h-[80px]">
+            <img src="./svg/integration/left-arrow.svg" alt="Left Arrow" />
+            <button
+              class="bg-button-bg hover:bg-button-hover-bg text-white rounded-[12px] w-[100%] max-w-[200px] p-4 text-base h-[55px] self-end transition-all"
+            >
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-6/12 flex justify-center items-center wow animate__bounceInRight" data-wow-duration="1s">
+        <img src="./svg/offers-sync.svg" alt="Offers Sync" />
+      </div>
+    </section>
+    <section class="bg-white flex flex-col justify-center align-center pt-20">
+      <div class="mb-24 text-center">
+        <h3 class="text-4xl font-bold mb-3">Instant Updates</h3>
+        <h2 class="text-5xl font-bold">What you need to know!</h2>
+      </div>
+      <div class="flex justify-center items-start min-[1280px]:px-20 max-[1280px]:pb-12 gap-5">
+        <div
+          class="min-[768px]:bg-[url('./svg/instant-updates/left-background.svg')] bg-contain min-[1200px]:w-[25%] w-[40%] h-[40vw] relative max-[768px]:h-[max-content] max-h-[500px] flex flex-col gap-3 wow animate__bounceInLeft"
+          data-wow-duration="1s"
+        >
+          <div
+            class="max-w-[280px] w-[100%] h-[85px] rounded-full bg-white shadow-[0_8px_24px_0_#675AC533] min-[768px]:absolute right-[-70%] min-[768px]:translate-x-[-50%] py-3 px-5 flex items-center gap-3"
+          >
+            <img src="./svg/instant-updates/cards/1.svg" alt="1" />
+            <span class="text-[#242B35] text-lg">Best API Selection</span>
+          </div>
+          <div
+            class="max-w-[280px] w-[100%] h-[85px] rounded-full bg-white shadow-[0_8px_24px_0_#675AC533] min-[768px]:absolute right-[-55%] top-[50%] min-[768px]:translate-x-[-50%] min-[768px]:translate-y-[-50%] py-3 px-5 flex items-center gap-3"
+          >
+            <img src="./svg/instant-updates/cards/2.svg" alt="2" />
+            <span class="text-[#242B35] text-lg">gRPC + Restful</span>
+          </div>
+          <div
+            class="max-w-[280px] w-[100%] h-[85px] rounded-full bg-white shadow-[0_8px_24px_0_#675AC533] min-[768px]:absolute right-[-70%] bottom-0 min-[768px]:translate-x-[-50%] py-3 px-5 flex items-center gap-3"
+          >
+            <img src="./svg/instant-updates/cards/3.svg" alt="3" />
+            <span class="text-[#242B35] text-lg"
+              >Success & Failure Reporting</span
+            >
+          </div>
+        </div>
+        <img class="grow hidden min-[768px]:block w-[45%] self-end wow animate__bounceInUp" data-wow-duration="1s" src="./svg/instant-updates/avatar.svg" alt="Avatar" />
+        <div
+          class="min-[768px]:bg-[url('./svg/instant-updates/right-background.svg')] bg-contain min-[1200px]:w-[25%] w-[40%] relative h-[40vw] max-[768px]:h-[max-content] max-h-[500px] flex flex-col gap-3 wow animate__bounceInRight"
+          data-wow-duration="1s"
+         
+        >
+          <div
+            class="max-w-[280px] w-[100%] h-[85px] rounded-full bg-white shadow-[0_8px_24px_0_#675AC533] min-[768px]:absolute left-[-70%] min-[768px]:translate-x-[50%] py-3 px-5 flex items-center gap-3"
+          >
+            <img src="./svg/instant-updates/cards/4.svg" alt="1" />
+            <span class="text-[#242B35] text-lg">Documented Retrials</span>
+          </div>
+          <div
+            class="max-w-[280px] w-[100%] h-[85px] rounded-full bg-white shadow-[0_8px_24px_0_#675AC533] min-[768px]:absolute left-[-55%] top-[50%] min-[768px]:translate-x-[50%] min-[768px]:translate-y-[-50%] py-3 px-5 flex items-center gap-3"
+          >
+            <img src="./svg/instant-updates/cards/5.svg" alt="2" />
+            <span class="text-[#242B35] text-lg">Instant Broadcast</span>
+          </div>
+          <div
+            class="max-w-[280px] w-[100%] h-[85px] rounded-full bg-white shadow-[0_8px_24px_0_#675AC533] min-[768px]:absolute left-[-70%] bottom-0 min-[768px]:translate-x-[50%] py-3 px-5 flex items-center gap-3"
+          >
+            <img src="./svg/instant-updates/cards/6.svg" alt="3" />
+            <span class="text-[#242B35] text-lg"
+              >Enchance Business Reputation</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col px-8 md:px-40 py-20 pb-0 min-[1240px]:h-[690px] min-[1240px]:flex-row max-[1240px]:pb-12 items-center justify-center">
+      <div class="w-full min-[1240px]:w-6/12 relative h-full min-[1240px]:pt-12 mb-12 wow animate__bounceInLeft" data-wow-duration="1s">
+        <h3 class="text-5xl font-bold">Exponential Backoff</h3>
+        <h2 class="text-6xl font-bold">Algorithm</h2>
+        <div class="absolute bottom-[-14px] left-[-15%] hidden min-[1240px]:block">
+          <img src="./svg/back-off-alogrithm/avatar.svg" alt="Avatar" />
+        </div>
+      </div>
+      <div class="w-full min-[1240px]:w-6/12 flex flex-col gap-8 wow animate__bounceInRight" data-wow-duration="1s">
+        <div class="point flex max-[516px]:h-[88px] min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo bg-[#DFD4F5] w-[60px] h-[60px] rounded-full flex justify-center items-center"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="./svg/back-off-alogrithm/right-side/1.svg"
+              alt="1"
+            />
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex items-center text-xl px-6 py-4 text-[#242B35]"
+          >
+            The update is dispatched immediately first!
+          </div>
+        </div>
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo bg-[#DFD4F5] w-[60px] h-[60px] rounded-full flex justify-center items-center"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="./svg/back-off-alogrithm/right-side/2.svg"
+              alt="2"
+            />
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex items-center text-xl px-6 py-4 text-[#242B35]"
+          >
+            To all of your providers.
+          </div>
+        </div>
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo bg-[#DFD4F5] w-[60px] h-[60px] rounded-full flex justify-center items-center"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="./svg/back-off-alogrithm/right-side/3.svg"
+              alt="3"
+            />
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex items-center text-xl px-6 py-4 text-[#242B35]"
+          >
+            If failed, keeps retyring!
+          </div>
+        </div>
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo bg-[#DFD4F5] w-[60px] h-[60px] rounded-full flex justify-center items-center"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="./svg/back-off-alogrithm/right-side/4.svg"
+              alt="4"
+            />
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex items-center text-xl px-6 py-4 text-[#242B35]"
+          >
+            Exponential Delay!
+          </div>
+        </div>
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo bg-[#DFD4F5] w-[60px] h-[60px] rounded-full flex justify-center items-center"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="./svg/back-off-alogrithm/right-side/5.svg"
+              alt="5"
+            />
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex items-center text-xl px-6 py-4 text-[#242B35]"
+          >
+            Until success or reseeding!
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex max-[1225px]:flex-col max-[1225px]:px-8 px-40 py-20 min-h-[690px] max-h-[max-content] bg-white">
+      <div class="w-6/12 wow animate__bounceInLeft" data-wow-duration="1s">
+        <div class="w-[max-content]">
+          <h2 class="text-6xl font-bold mb-12">Simplified<br />Standard<br />Flow</h2>
+          <img
+            class="ml-auto hidden min-[1225px]:block"
+            src="./svg/simple-standard-flow-arrow.svg"
+            alt="Simplified Standard Flow"
+          />
+        </div>
+      </div>
+      <div class="max-[1225px]:w-full w-6/12 flex flex-col gap-8 wow animate__bounceInRight" data-wow-duration="1s">
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo w-[60px] h-[60px] rounded-full flex justify-center items-center text-[#10393B] bg-[#CEF1F2] text-2xl"
+          >
+            1
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex flex-col text-xl px-8 py-4 text-[#242B35]"
+          >
+            <h3 class="mb-1">Input</h3>
+            <ul class="list-disc pl-3 text-sm">
+              <li class="text-[#5B6B86]">File dump, Rest, gRPC.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo w-[60px] h-[60px] rounded-full flex justify-center items-center text-[#10393B] bg-[#CEF1F2] text-2xl"
+          >
+            2
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex flex-col text-xl px-8 py-4 text-[#242B35]"
+          >
+            <h3 class="mb-1">Input adapters</h3>
+            <ul class="list-disc pl-3 text-sm">
+              <li class="text-[#5B6B86]">Here the input is sanitized.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo w-[60px] h-[60px] rounded-full flex justify-center items-center text-[#10393B] bg-[#CEF1F2] text-2xl"
+          >
+            3
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex flex-col text-xl px-8 py-4 text-[#242B35]"
+          >
+            <h3 class="mb-1">Parses</h3>
+            <ul class="list-disc pl-3 text-sm">
+              <li class="text-[#5B6B86]">Input is converted here.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="point max-[516px]:h-[88px] flex min-[516px]:gap-28 max-[516px]:px-4 max-[516px]:py-0 items-center max-[516px]:bg-white max-[516px]:bg-white max-[516px]:rounded-full max-[516px]:shadow-[0_8px_24px_0_#675AC533]">
+          <div
+            class="logo w-[60px] h-[60px] rounded-full flex justify-center items-center text-[#10393B] bg-[#CEF1F2] text-2xl"
+          >
+            4
+          </div>
+          <div
+            class="rounded-full max-w-[280px] w-[100%] min-[517px]:shadow-[0_8px_24px_0_#675AC533] flex flex-col text-xl px-8 py-4 text-[#242B35]"
+          >
+            <h3 class="mb-1">Output adapters</h3>
+            <ul class="list-disc pl-3 text-sm">
+              <li class="text-[#5B6B86]">Data is streamed to providers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-14 mb-36">
+      <div class="text-center">
+        <h3 class="text-[#3AC6CB] font-bold text-4xl mb-3">7 steps</h3>
+        <h2 class="font-bold text-5xl">For Successful Sync!</h2>
+      </div>
+      <div
+        class="max-h-[450px] aspect-square max-w-[450px] w-[70%] rounded-full border-4 border-[#B2E9EB] border-dashed mx-auto mt-20 relative wow animate__bounceInUp"
+        data-wow-duration="1s"
+      >
+        <!-- Card -->
+        <div
+          class="flex mx-auto absolute right-0 left-0 w-[210px] bg-white shadow-[0_8px_24px_0_#3AC6CB33] px-4 py-3 top-[-15px] rounded-full items-center"
+        >
+          <span
+            class="w-[39px] h-[39px] bg-[#3AC6CB33] rounded-full flex justify-center items-center font-Inter mr-4"
+            >1</span
+          >
+          <p class="font-Inter text-lg">Input</p>
+        </div>
+        <div
+          class="flex absolute w-[137.7%] top-1/4 justify-between mx-auto right-0 left-0 translate-x-[-15%]"
+        >
+          <!-- Card -->
+          <div
+            class="flex w-[273px] bg-white shadow-[0_8px_24px_0_#3AC6CB33] px-4 py-3 rounded-full items-center"
+          >
+            <span
+              class="w-[39px] h-[39px] bg-[#3AC6CB33] rounded-full flex justify-center items-center font-Inter mr-4"
+              >7</span
+            >
+            <p class="font-Inter text-lg">Retrials & Monitoring</p>
+          </div>
+          <!-- Card -->
+          <div
+            class="flex w-[210px] bg-white shadow-[0_8px_24px_0_#3AC6CB33] px-4 py-3 rounded-full items-center"
+          >
+            <span
+              class="w-[39px] h-[39px] bg-[#3AC6CB33] rounded-full flex justify-center items-center font-Inter mr-4"
+              >2</span
+            >
+            <p class="font-Inter text-lg">Parsing</p>
+          </div>
+        </div>
+        <div
+          class="flex absolute w-[129.7%] top-2/4 justify-between mx-auto right-0 left-0 translate-x-[-12%]"
+        >
+          <!-- Card -->
+          <div
+            class="flex w-[210px] bg-white shadow-[0_8px_24px_0_#3AC6CB33] px-4 py-3 rounded-full items-center"
+          >
+            <span
+              class="w-[39px] h-[39px] bg-[#3AC6CB33] rounded-full flex justify-center items-center font-Inter mr-4"
+              >6</span
+            >
+            <p class="font-Inter text-lg">Dispatching</p>
+          </div>
+          <!-- Card -->
+          <div
+            class="flex w-[210px] bg-white shadow-[0_8px_24px_0_#3AC6CB33] px-4 py-3 rounded-full items-center"
+          >
+            <span
+              class="w-[39px] h-[39px] bg-[#3AC6CB33] rounded-full flex justify-center items-center font-Inter mr-4"
+              >3</span
+            >
+            <p class="font-Inter text-lg">Analyzing</p>
+          </div>
+        </div>
+        <div
+          class="flex absolute w-[122.2%] top-3/4 justify-between mx-auto right-0 left-0 translate-x-[-6%]"
+        >
+          <!-- Card -->
+          <div
+            class="flex w-[210px] bg-white shadow-[0_8px_24px_0_#3AC6CB33] px-4 py-3 rounded-full items-center"
+          >
+            <span
+              class="w-[39px] h-[39px] bg-[#3AC6CB33] rounded-full flex justify-center items-center font-Inter mr-4"
+              >5</span
+            >
+            <p class="font-Inter text-lg">Templating</p>
+          </div>
+          <!-- Card -->
+          <div
+            class="flex w-[210px] bg-white shadow-[0_8px_24px_0_#3AC6CB33] px-4 py-3 rounded-full items-center"
+          >
+            <span
+              class="w-[39px] h-[39px] bg-[#3AC6CB33] rounded-full flex justify-center items-center font-Inter mr-4"
+              >4</span
+            >
+            <p class="font-Inter text-lg">Splitting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-20 flex gap-8 pb-20 max-[1128px]:flex-col max-[1128px]:px-4">
+      <div
+        class="features_card flex-grow rounded-[48px] px-12 pt-16 pb-0 flex flex-col flex-[1_1_0] w-0 max-[1128px]:w-full max-[1128px]:relative wow animate__bounceInLeft"
+        data-wow-duration="1s"
+      >
+        <h2 class="text-5xl font-Inter font-[600] mb-4 max-[1128px]:text-4xl">Better CX</h2>
+        <p class="text-[#384252] text-lg font-Inter">
+          Focus on delivering better customer experience for always returning
+          customers.
+        </p>
+        <img class="mt-auto max-[1128px]:h-[80%]" src="./svg/features/1.svg" alt="1" />
+      </div>
+      <div
+        class="features_card flex-grow rounded-[48px] px-12 pt-16 pb-0 flex flex-col flex-[1_1_0] w-0 max-[1128px]:w-full max-[1128px]:relative wow animate__bounceInRight"
+        data-wow-duration="1s"
+      >
+        <h2 class="text-5xl font-Inter font-[600] mb-4 max-[1128px]:text-4xl">Lower Compensations</h2>
+        <p class="text-[#384252] text-lg font-Inter">
+          On average, businesses lose around 6% of their total sales volume due
+          to order compensations for non available items.
+        </p>
+        <img class="mt-auto max-[1128px]:h-[80%]" src="./svg/features/2.svg" alt="2" />
+      </div>
+    </section>
+    <section class="bg-white flex flex-col justify-center align-center pt-20">
+      <div class="mb-24 text-center">
+        <h3 class="text-4xl font-bold mb-3">To get started</h3>
+        <h2 class="text-5xl font-bold">We need the following</h2>
+      </div>
+      <div class="flex justify-center items-start px-20">
+        <img class="hidden lg:block wow animate__bounceInLeft" data-wow-duration="1s" src="./svg/getting-started/avatar.svg" alt="Avatar" />
+        <div class="flex flex-col gap-3 wow animate__bounceInRight" data-wow-duration="1s">
+          <div
+            class="flex gap-2 w-[260px] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center"
+          >
+            <img src="./svg/getting-started/true.svg" alt="true sign" />
+            <p class="text-lg">Input</p>
+          </div>
+          <div
+            class="flex gap-2 w-[260px] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center"
+          >
+            <img src="./svg/getting-started/true.svg" alt="true sign" />
+            <p class="text-lg">1 Serverside Ext.</p>
+          </div>
+          <div
+            class="flex gap-2 w-[260px] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center"
+          >
+            <img src="./svg/getting-started/true.svg" alt="true sign" />
+            <p class="text-lg">Provider Cred.</p>
+          </div>
+          <div
+            class="flex gap-2 w-[260px] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center mb-7"
+          >
+            <img src="./svg/getting-started/true.svg" alt="true sign" />
+            <p class="text-lg">Good connection.</p>
+          </div>
+          <div
+            class="w-[310px] bg-white shadow-[0_8px_24px_0_#675AC533] px-6 py-4 top-[-15px] rounded-3xl items-center"
+          >
+            <h3 class="text-xl">Send details</h3>
+            <p class="text-[#5B6B86] text-lg">sales@speedsyncloud.io</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-between lg:px-40 py-14 bg-[url('./svg/mindset/brain.svg')] bg-no-repeat bg-center bg-[length:95%_95%]">
+      <div class="flex flex-col flex[1_1_0] basis-[40%] wow animate__bounceInLeft" data-wow-duration="1s">
+        <h2 class="text-4xl font-bold mb-8">Negative Mindset</h2>
+        <div class="flex flex-col gap-5">
+          <div
+            class="flex gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/x.svg" alt="true sign" />
+            <p class="md:text-lg text-md">This is too hard, I give up.</p>
+          </div>
+          <div
+            class="flex gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/x.svg" alt="true sign" />
+            <p class="md:text-lg text-md">I made a mistake.</p>
+          </div>
+          <div
+            class="flex gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/x.svg" alt="true sign" />
+            <p class="md:text-lg text-md">I don’t know how.</p>
+          </div>
+          <div
+            class="flex gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/x.svg" alt="true sign" />
+            <p class="md:text-lg text-md">This isn’t working.</p>
+          </div>
+          <div
+            class="flex gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/x.svg" alt="true sign" />
+            <p class="md:text-lg text-md">I’m not good enough.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-grow flex[1_1_0] min-[1280px]:h-[500px] flex justify-center items-center"
+      >
+      </div>
+      </div>
+      <div class="flex[1_1_0] basis-[40%] wow animate__bounceInRight" data-wow-duration="1s">
+        <h2 class="text-4xl font-bold text-right mb-8">Growth Mindset</h2>
+        <div class="flex flex-col gap-5">
+          <div
+            class="flex flex-row-reverse gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/true.svg" alt="true sign" />
+            <p class="md:text-lg text-md">I will persevere & keep trying.</p>
+          </div>
+          <div
+            class="flex flex-row-reverse gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/true.svg" alt="true sign" />
+            <p class="md:text-lg text-md">Mistakes help me grow.</p>
+          </div>
+          <div
+            class="flex flex-row-reverse gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/true.svg" alt="true sign" />
+            <p class="md:text-lg text-md">I can learn how & improve.</p>
+          </div>
+          <div
+            class="flex flex-row-reverse gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/true.svg" alt="true sign" />
+            <p class="md:text-lg text-md">I’ll try a different way.</p>
+          </div>
+          <div
+            class="flex flex-row-reverse gap-2 w-[100%] bg-white shadow-[0_8px_24px_0_#675AC533] px-4 py-3 top-[-15px] rounded-full items-center z-10"
+          >
+            <img src="./svg/mindset/true.svg" alt="true sign" />
+            <p class="md:text-lg text-md">I will put in my best effort.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white text-center py-20 px-8 lg:px-40">
+      <h2 class="text-3xl font-bold">Five Reasons</h2>
+      <h2 class="text-5xl font-bold">Why Choosing Us</h2>
+      <h2 class="text-3xl font-bold mb-16">As your Service Provider</h2>
+      <div class="grid grid-cols-[repeat(auto-fit,_120px)] gap-4 justify-between px-0 lg:px-40 wow animate__bounceInUp" data-wow-duration="1s">
+        <div class="bg-[#CEF1F2] w-[120px] h-[120px] rounded-full flex justify-center items-center border-[12px] border-[#90DFE1] p-3">
+          Cost effective
+        </div>
+        <div class="bg-[#CEF1F2] w-[120px] h-[120px] rounded-full flex justify-center items-center border-[12px] border-[#90DFE1] p-3">
+          Single Integration
+        </div>
+        <div class="bg-[#CEF1F2] w-[120px] h-[120px] rounded-full flex justify-center items-center border-[12px] border-[#90DFE1] p-3">
+          Economy of Scale
+        </div>
+        <div class="bg-[#CEF1F2] w-[120px] h-[120px] rounded-full flex justify-center items-center border-[12px] border-[#90DFE1] p-3">
+          Prioritize customers
+        </div>
+        <div class="bg-[#CEF1F2] w-[120px] h-[120px] rounded-full flex justify-center items-center border-[12px] border-[#90DFE1] p-3">
+          Standardized
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-[#191D24] flex justify-between px-20 py-2 items-center drop-shadow-sm"
+    >
+      <img class="h-14" src="./img/logo.png" alt="Logo" />
+      <ul class="flex gap-x-12">
+        <li><a class="text-lg text-white" href="#showcase">Showcase</a></li>
+        <li><a class="text-lg text-white" href="price.html">Pricing</a></li>
+      </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      $(function(){
+        new WOW().init(); 
+      });
+    </script>
+  </body>
+</html>
